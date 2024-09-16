@@ -27,12 +27,42 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin: 10px 0; /* Add margin to space from other elements */
 }
 
 .upload-button:hover {
   background-color: #0056b3;
 }
 
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+label[for="file-upload"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745; /* Different color for the label button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0; /* Add margin to space from other elements */
+}
+
+label[for="file-upload"]:hover {
+  background-color: #218838;
+}
+
 h1 {
   margin-bottom: 20px;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 500px;
+  border: 2px solid #fff; /* Optional border around the image */
+  border-radius: 5px; /* Optional rounded corners */
 }
